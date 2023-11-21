@@ -114,7 +114,7 @@ class WordCloudSetting {
     // }
 
     for (var i = 0; i < data.length; i++) {
-      double denominator = data[0]['value'] - data[data.length - 1]['value'];
+      double denominator = (data[0]['value'] - data[data.length - 1]['value'])*1.0;
 
       double getTextSize;
       if (denominator != 0) {
